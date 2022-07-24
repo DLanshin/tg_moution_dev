@@ -1,0 +1,110 @@
+mixin included(data)
+    section.included&attributes(attributes)
+        .included__container.container
+            h2.included__title.title.title_secondary <span>01</span>
+                | Что входит в услуги?
+        .included__slider.slider
+            .included__slider-w.container
+                .swiper
+                    .swiper-wrapper
+                        .swiper-slide.included__slide
+                            .included__entry
+                                .included__num 1
+                                .included__text Рассылка сообщений по лс
+
+                        .swiper-slide.included__slide
+                            .included__entry
+                                .included__num 2
+                                .included__text Рассылка по чатам
+
+                        .swiper-slide.included__slide
+                            .included__entry
+                                .included__num 3
+                                .included__text Бесплатный парсинг целевой аудитории
+
+                        .swiper-slide.included__slide
+                            .included__entry
+                                .included__num 4
+                                .included__text Отчет о выполненной работе
+
+                        .swiper-slide.included__slide
+                            .included__entry
+                                .included__num 5
+                                .included__text Скидки постоянным клиентам
+
+                        .swiper-slide.included__slide
+                            .included__entry
+                                .included__num 6
+                                .included__text Составление промо-текста для рекламы
+
+                .included__slider-controls
+                    .included__controls-w
+                        .included__buttons.slider__buttons
+                            button.slider__button.slider__button_prev.swiper-button-prev
+                                != pugHelpers.Icon.call(locals, {iconName: 'slider-arrow', className: 'slider__button-arrow'})
+
+                            button.slider__button.slider__button_next.swiper-button-next
+                                != pugHelpers.Icon.call(locals, {iconName: 'slider-arrow', className: 'slider__button-arrow'})
+
+                        .slider__pagination.swiper-pagination
+
+
+            | <svg class="included__slider-bg" width="1902" height="413" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="a" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1923" height="413"><path d="m0 0 1923 69.266V413H0V0Z" fill="#272D4E"/></mask><g mask="url(#a)" fill="#4ECAED" fill-opacity=".05"><rect x="-162" y="165.675" width="1729" height="247" rx="16" transform="rotate(-1.779 -162 165.675)"/><rect x="551.656" y="143.511" width="1015" height="247" rx="16" transform="rotate(-1.779 551.656 143.511)"/><rect x="1086.4" y="126.903" width="917" height="247" rx="16" transform="rotate(-1.779 1086.4 126.903)"/></g></svg>
+
+            | <svg class="included__slider-bg included__slider-bg_mob"  width="375" height="301" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="-165" y="53.6788" width="1729" height="247" rx="16" transform="rotate(-1.77891 -165 53.6788)" fill="#4ECAED" fill-opacity="0.05"/></svg>
+
+
+mixin included-en(data)
+    section.included&attributes(attributes)
+        .included__container.container
+            h2.included__title.title.title_secondary <span>01</span>
+                | What is included in the services?
+        .included__slider.slider
+            .included__slider-w.container
+                .swiper
+                    .swiper-wrapper
+                        .swiper-slide.included__slide
+                            .included__entry
+                                .included__num 1
+                                .included__text Sending messages by personal account
+
+                        .swiper-slide.included__slide
+                            .included__entry
+                                .included__num 2
+                                .included__text Mailing by chats
+
+                        .swiper-slide.included__slide
+                            .included__entry
+                                .included__num 3
+                                .included__text Free parsing of the target audience
+
+                        .swiper-slide.included__slide
+                            .included__entry
+                                .included__num 4
+                                .included__text Report on the work performed
+
+                        .swiper-slide.included__slide
+                            .included__entry
+                                .included__num 5
+                                .included__text Discounts for regular customers
+
+                        .swiper-slide.included__slide
+                            .included__entry
+                                .included__num 6
+                                .included__text Preparation of promotional text for advertising
+
+                .included__slider-controls
+                    .included__controls-w
+                        .included__buttons.slider__buttons
+                            button.slider__button.slider__button_prev.swiper-button-prev
+                                != pugHelpers.Icon.call(locals, {iconName: 'slider-arrow', className: 'slider__button-arrow'})
+
+                            button.slider__button.slider__button_next.swiper-button-next
+                                != pugHelpers.Icon.call(locals, {iconName: 'slider-arrow', className: 'slider__button-arrow'})
+
+                        .slider__pagination.swiper-pagination
+
+
+            | <svg class="included__slider-bg" width="1902" height="413" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="a" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1923" height="413"><path d="m0 0 1923 69.266V413H0V0Z" fill="#272D4E"/></mask><g mask="url(#a)" fill="#4ECAED" fill-opacity=".05"><rect x="-162" y="165.675" width="1729" height="247" rx="16" transform="rotate(-1.779 -162 165.675)"/><rect x="551.656" y="143.511" width="1015" height="247" rx="16" transform="rotate(-1.779 551.656 143.511)"/><rect x="1086.4" y="126.903" width="917" height="247" rx="16" transform="rotate(-1.779 1086.4 126.903)"/></g></svg>
+
+            | <svg class="included__slider-bg included__slider-bg_mob"  width="375" height="301" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="-165" y="53.6788" width="1729" height="247" rx="16" transform="rotate(-1.77891 -165 53.6788)" fill="#4ECAED" fill-opacity="0.05"/></svg>

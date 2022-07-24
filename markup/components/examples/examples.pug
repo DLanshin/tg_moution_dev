@@ -1,0 +1,70 @@
+mixin examples(data)
+    section#examples.examples.animate__animated
+        .examples__container.container
+
+            .examples__circle.circle
+            //- .examples__circle.examples__circle_2.circle
+
+            != pugHelpers.Icon.call(locals, {iconName: 'audience-path', className: 'examples__path'})
+
+
+            h2.examples__title.title.title_secondary  <span>05</span> Примеры рассылки.
+
+            .examples__gallery
+                a.examples__item(href="static/img/content/examples-1-desktop@2x.webp")
+                    picture.examples__image
+                        source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/content/examples-1-desktop@2x.webp" media="(min-width: 960px)")
+                        source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/content/examples-1-desktop@2x.png" media="(min-width: 960px)")
+
+                        //- source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/hero-bg-tablet@2x.webp" media="(min-width: 640px)")
+                        //- source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/hero-bg-tablet@2x.png" media="(min-width: 640px)")
+
+                        source(type="image/webp", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/content/examples-1-mob@2x.webp" )
+                        source(type="image/png", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.png", data-srcset="static/img/content/examples-1-mob@2x.png" )
+
+                        img.lazy(src="static/img/general/placeholder-image.webp" alt="Изображение", data-src="static/img/content/examples-1-desktop.png" )
+
+                a.examples__item(href="static/img/content/examples-2-desktop@2x.webp")
+                    picture.examples__image
+                        source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/content/examples-2-desktop@2x.webp" media="(min-width: 960px)")
+                        source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/content/examples-2-desktop@2x.png" media="(min-width: 960px)")
+
+                        //- source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/hero-bg-tablet@2x.webp" media="(min-width: 640px)")
+                        //- source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/hero-bg-tablet@2x.png" media="(min-width: 640px)")
+
+                        source(type="image/webp", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/content/examples-2-mob@2x.webp" )
+                        source(type="image/png", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.png", data-srcset="static/img/content/examples-2-mob@2x.png" )
+
+                        img.lazy(src="static/img/general/placeholder-image.webp" alt="Изображение", data-src="static/img/content/examples-2-desktop.png" )
+
+
+mixin examples-en(data)
+    section#examples.examples.animate__animated.animate__delay-2s
+        .examples__container.container
+
+            .examples__circle.circle
+            //- .examples__circle.examples__circle_2.circle
+            != pugHelpers.Icon.call(locals, {iconName: 'audience-path', className: 'examples__path'})
+
+            h2.examples__title.title.title_secondary <span>05</span> Examples of mailing.
+
+            .examples__gallery
+                a.examples__item(href="static/img/content/examples-1-desktop@2x.webp")
+                    picture.examples__image
+                        source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/content/examples-1-desktop@2x.webp" media="(min-width: 960px)")
+                        source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/content/examples-1-desktop@2x.png" media="(min-width: 960px)")
+
+                        source(type="image/webp", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/content/examples-1-mob@2x.webp" )
+                        source(type="image/png", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.png", data-srcset="static/img/content/examples-1-mob@2x.png" )
+
+                        img.lazy(src="static/img/general/placeholder-image.webp" alt="Image", data-src="static/img/content/examples-1-desktop.png" )
+
+                a.examples__item(href="static/img/content/examples-2-desktop@2x.webp")
+                    picture.examples__image
+                        source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/content/examples-2-desktop@2x.webp" media="(min-width: 960px)")
+                        source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/content/examples-2-desktop@2x.png" media="(min-width: 960px)")
+
+                        source(type="image/webp", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/content/examples-2-mob@2x.webp" )
+                        source(type="image/png", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.png", data-srcset="static/img/content/examples-2-mob@2x.png" )
+
+                        img.lazy(src="static/img/general/placeholder-image.webp" alt="Image", data-src="static/img/content/examples-2-desktop.png" )

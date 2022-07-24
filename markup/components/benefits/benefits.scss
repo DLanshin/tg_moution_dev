@@ -1,0 +1,180 @@
+.benefits {
+  position: relative;
+  overflow: hidden;
+  // &__circle {
+  //   // z-index: -1;
+  //   top: -90px;
+  //   left: -105px;
+  //   width: 164px;
+  //   height: 164px;
+  // }
+
+  // &__circle_2 {
+  //   top: -80px;
+  //   left: auto;
+  //   right: 35px;
+  //   width: 99px;
+  //   height: 99px;
+  // }
+
+  &__path {
+    z-index: -1;
+    position: absolute;
+    bottom: -280px;
+    left: -40px;
+    width: 400px;
+    height: 372px;
+    @include mq($medium) {
+      display: none;
+    }
+    @include mq($large) {
+      z-index: 0;
+      bottom: -430px;
+      left: 30px;
+      left: -280px;
+      width: 642px;
+      height: 642px;
+      display: block;
+    }
+  }
+
+  &__path_2 {
+    top: auto;
+    right: auto;
+    bottom: -204px;
+    left: -10px;
+    // width: 292px;
+    width: 400px;
+    height: 372px;
+    @include mq($medium) {
+      display: none;
+    }
+    @include mq($large) {
+      top: 342px;
+      right: -230px;
+      bottom: auto;
+      left: auto;
+      width: 642px;
+      // height: 819px;
+      height: 448px;
+      display: block;
+
+    }
+  }
+
+  &__tg {
+    position: absolute;
+    top: 40px;
+    right: 560px;
+    width: 202px;
+    height: 140.76px;
+    display: none;
+    @include mq($medium) {
+      right: auto;
+      left: 870px;
+      display: block;
+    }
+
+  }
+
+  &__container {
+    overflow: hidden;
+    position: relative;
+    padding-top: $padding-container-mob;
+    padding-bottom: $padding-container-mob;
+    @include mq($large) {
+      padding-top: 115px;
+      padding-bottom: 115px;
+
+    }
+  }
+
+  &__title {
+    margin-bottom: $margin-title-secondary-mob;
+    @include mq($medium) {
+      margin-bottom: $margin-title-secondary;
+    }
+  }
+
+  &__slider {
+    overflow: hidden;
+    // margin-right: -37px;
+    @include mq($medium) {
+      margin-right: 0;
+
+    }
+    .swiper-wrapper {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: nowrap;
+      @include mq($small) {
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  &__slide {
+    width: 100%;
+    padding: 22px 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    //height: 132px;
+    background: $color-black;
+    color: $color-white;
+    border-radius: 6px;
+    margin: 10px;
+
+    @include mq($small){
+      width: calc(50% - 20px);
+    }
+    @include mq($medium) {
+      width: calc(50% - 20px);
+
+      padding-right: 29px;
+      padding-left: 29px;
+    }
+  }
+
+  &__icon {
+    margin-right: 10px;
+    max-width: 88px;
+    width: 100%;
+    flex-shrink: 0;
+
+    @include mq($medium) {
+      margin-right: 20px;
+
+    }
+
+  }
+
+  &__text {
+    margin-right: -20px;
+    font-weight: 500;
+    @include font-size(14px);
+    line-height: 1.375;
+    @include mq($small) {
+      @include font-size(18px);
+    }
+
+    @include mq($large) {
+      @include font-size(22px);
+    }
+
+  }
+
+  &__pagination {
+    justify-content: center;
+    @include mq($medium) {
+      justify-content: center;
+    }
+  }
+
+  .swiper-pagination-bullet {
+    color: $color-darkblue;
+
+  }
+
+}

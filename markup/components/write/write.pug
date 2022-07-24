@@ -1,0 +1,52 @@
+mixin write(data)
+    article.write&attributes(attributes)
+        .write__container.container
+
+            .write__circle.circle
+            .write__circle.write__circle_2.circle
+            .write__circle.write__circle_3.circle
+
+
+            != pugHelpers.Icon.call(locals, {iconName: 'write-path', className: 'write__path'})
+
+            .write__entry
+                h3.write__title.title.title_third Как написать продающий текст и привлечь клиентов?
+                .write__text.text
+                    p 70% эффективности рекламы зависит от правильно составленного промо текста. Наш специалист с опытом и насмотренностью какая реклама работает лучше, поможет вам.
+                a.write__button.button(href="#") Заказать у специалиста
+
+            picture.write__image
+                source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/service-img-desktop@2x.webp" media="(min-width: 640px)")
+                source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/service-img-desktop@2x.png" media="(min-width: 640px)")
+
+                source(type="image/webp", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/service-img-mob@2x.webp" )
+                source(type="image/png", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/service-img-mob@2x.png" )
+
+                img.lazy(src="static/img/general/placeholder-image.webp" alt="Изображение", data-src="static/img/general/service-img-desktop.png" )
+
+
+mixin write-en(data)
+    article.write&attributes(attributes)
+        .write__container.container
+
+            .write__circle.circle
+            .write__circle.write__circle_2.circle
+            .write__circle.write__circle_3.circle
+
+
+            != pugHelpers.Icon.call(locals, {iconName: 'write-path', className: 'write__path'})
+
+            .write__entry
+                h3.write__title.title.title_third How to write a selling text and attract customers?
+                .write__text.text
+                    p 70% of the effectiveness of advertising depends on a properly composed promo text. Our specialist with experience and knowledge of which advertising works best will help you.
+                a.write__button.button(href="#") Order from a specialist
+
+            picture.write__image
+                source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/service-img-desktop@2x.webp" media="(min-width: 640px)")
+                source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/service-img-desktop@2x.png" media="(min-width: 640px)")
+
+                source(type="image/webp", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/service-img-mob@2x.webp" )
+                source(type="image/png", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/service-img-mob@2x.png" )
+
+                img.lazy(src="static/img/general/placeholder-image.webp" alt="Image", data-src="static/img/general/service-img-desktop.png" )

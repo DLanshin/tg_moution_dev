@@ -1,0 +1,34 @@
+include ../nav/nav.pug
+
+mixin footer(data)
+    footer.footer&attributes(attributes)
+        .footer__container.container
+            a.footer__logo.logo(href="#")
+                != pugHelpers.Icon.call(locals, {iconName: 'logo-second', className: 'logo__icon'})
+
+            +nav(nav.primaryListRu).footer__nav.nav_secondary
+
+            .footer__langs.langs.langs_secondary
+                a.langs__lang(href="/index-en.html")
+                    != pugHelpers.Icon.call(locals, {iconName: 'lang-en', className: 'langs__icon'})
+                    | Eng
+                a.langs__lang.langs__lang_active(href="/index.html")
+                    != pugHelpers.Icon.call(locals, {iconName: 'lang-ru', className: 'langs__icon'})
+                    | Rus
+
+
+mixin footer-en(data)
+    footer.footer&attributes(attributes)
+        .footer__container.container
+            a.footer__logo.logo(href="#")
+                != pugHelpers.Icon.call(locals, {iconName: 'logo-second', className: 'logo__icon'})
+
+            +nav(nav.primaryListEn).footer__nav.nav_secondary
+
+            .footer__langs.langs.langs_secondary
+                a.langs__lang(href="/index-en.html")
+                    != pugHelpers.Icon.call(locals, {iconName: 'lang-en', className: 'langs__icon'})
+                    | Eng
+                a.langs__lang.langs__lang_active(href="/index.html")
+                    != pugHelpers.Icon.call(locals, {iconName: 'lang-ru', className: 'langs__icon'})
+                    | Rus

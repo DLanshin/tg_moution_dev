@@ -1,0 +1,182 @@
+mixin benefits(data)
+    section#benefits.benefits.animate__animated
+        .benefits__container.container
+            h2.benefits__title.title.title_secondary <span>03</span> Преимущества работы с нами.
+
+            .benefits__slider.slider
+                .swiper
+                    .swiper-wrapper
+                        .benefits__slide.swiper-slide
+
+                            picture.benefits__icon
+                                source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/benefits-icon-1@2x.webp" media="(min-width: 960px)")
+                                source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/benefits-icon-1@2x.png" media="(min-width: 960px)")
+
+                                img.lazy(src="static/img/general/placeholder-image.webp" alt="Изображение", data-src="static/img/general/benefits-icon-1.png" )
+
+                            .benefits__text — Работаем с любой тематикой рекламы
+
+
+                        .benefits__slide.swiper-slide
+
+                            picture.benefits__icon
+                                source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/benefits-icon-2@2x.webp" media="(min-width: 960px)")
+                                source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/benefits-icon-2@2x.png" media="(min-width: 960px)")
+
+                                img.lazy(src="static/img/general/placeholder-image.webp" alt="Изображение", data-src="static/img/general/benefits-icon-2.png" )
+
+                            .benefits__text
+                                p — Гарантия доставленных сообщений
+
+
+                        .benefits__slide.swiper-slide
+
+                            picture.benefits__icon
+                                source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/benefits-icon-3@2x.webp" media="(min-width: 960px)")
+                                source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/benefits-icon-3@2x.png" media="(min-width: 960px)")
+
+                                img.lazy(src="static/img/general/placeholder-image.webp" alt="Изображение", data-src="static/img/general/benefits-icon-3.png" )
+
+                            .benefits__text — Живые отзывы наших клиентов
+
+
+                        .benefits__slide.swiper-slide
+
+                            picture.benefits__icon
+                                source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/benefits-icon-4@2x.webp" media="(min-width: 960px)")
+                                source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/benefits-icon-4@2x.png" media="(min-width: 960px)")
+
+                                img.lazy(src="static/img/general/placeholder-image.webp" alt="Изображение", data-src="static/img/general/benefits-icon-4.png" )
+
+                            .benefits__text — Саппорт онлайн с 8:00 до 24:00
+
+                        .benefits__slide.swiper-slide
+
+                            picture.benefits__icon
+                                source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/benefits-icon-5@2x.webp" media="(min-width: 960px)")
+                                source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/benefits-icon-5@2x.png" media="(min-width: 960px)")
+
+                                img.lazy(src="static/img/general/placeholder-image.webp" alt="Изображение", data-src="static/img/general/benefits-icon-5.png" )
+
+                            .benefits__text — Высокая скорость выполнения услуги
+
+                        .benefits__slide.swiper-slide
+
+                            picture.benefits__icon
+                                source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/benefits-icon-6@2x.webp" media="(min-width: 960px)")
+                                source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/benefits-icon-6@2x.png" media="(min-width: 960px)")
+
+                                img.lazy(src="static/img/general/placeholder-image.webp" alt="Изображение", data-src="static/img/general/benefits-icon-6.png" )
+
+                            .benefits__text — Мы нацелены только на качественный результат
+
+
+                    .benefits__pagination.swiper-pagination.slider__pagination
+                    //- .swiper-button-prev
+                    //- .swiper-button-next
+                    //- .swiper-scrollbar
+
+            //- .benefits__circle.circle
+            //- .benefits__circle.benefits__circle_2.circle
+
+            != pugHelpers.Icon.call(locals, {iconName: 'benefits-path-left', className: 'benefits__path'})
+            != pugHelpers.Icon.call(locals, {iconName: 'benefits-path-right', className: 'benefits__path benefits__path_2'})
+
+
+            picture.benefits__tg
+                source(type="image/webp", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/benefits-tg-icon@2x.webp" )
+                source(type="image/png", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/benefits-tg-icon@2x.png" )
+
+                img.lazy(src="static/img/general/placeholder-image.webp" alt="Изображение", data-src="static/img/general/benefits-tg-icon.png" )
+
+
+mixin benefits-en(data)
+    section#benefits.benefits.animate__animated
+        .benefits__container.container
+            h2.benefits__title.title.title_secondary <span>03</span> Advantages of working with us.
+
+            .benefits__slider.slider
+                .swiper
+                    .swiper-wrapper
+                        .benefits__slide.swiper-slide
+
+                            picture.benefits__icon
+                                source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/benefits-icon-1@2x.webp" media="(min-width: 960px)")
+                                source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/benefits-icon-1@2x.png" media="(min-width: 960px)")
+
+                                img.lazy(src="static/img/general/placeholder-image.webp" alt="Image", data-src="static/img/general/benefits-icon-1.png" )
+
+                            .benefits__text — We work with any subject of advertising
+
+
+                        .benefits__slide.swiper-slide
+
+                            picture.benefits__icon
+                                source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/benefits-icon-2@2x.webp" media="(min-width: 960px)")
+                                source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/benefits-icon-2@2x.png" media="(min-width: 960px)")
+
+                                img.lazy(src="static/img/general/placeholder-image.webp" alt="Image", data-src="static/img/general/benefits-icon-2.png" )
+
+                            .benefits__text
+                                p — Guarantee of delivered messages
+
+
+                        .benefits__slide.swiper-slide
+
+                            picture.benefits__icon
+                                source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/benefits-icon-3@2x.webp" media="(min-width: 960px)")
+                                source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/benefits-icon-3@2x.png" media="(min-width: 960px)")
+
+                                img.lazy(src="static/img/general/placeholder-image.webp" alt="Image", data-src="static/img/general/benefits-icon-3.png" )
+
+                            .benefits__text — Live reviews of our customers
+
+
+                        .benefits__slide.swiper-slide
+
+                            picture.benefits__icon
+                                source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/benefits-icon-4@2x.webp" media="(min-width: 960px)")
+                                source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/benefits-icon-4@2x.png" media="(min-width: 960px)")
+
+                                img.lazy(src="static/img/general/placeholder-image.webp" alt="Image", data-src="static/img/general/benefits-icon-4.png" )
+
+                            .benefits__text — Support online from 8:00 to 24:00
+
+                        .benefits__slide.swiper-slide
+
+                            picture.benefits__icon
+                                source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/benefits-icon-5@2x.webp" media="(min-width: 960px)")
+                                source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/benefits-icon-5@2x.png" media="(min-width: 960px)")
+
+                                img.lazy(src="static/img/general/placeholder-image.webp" alt="Image", data-src="static/img/general/benefits-icon-5.png" )
+
+                            .benefits__text — High speed of service execution
+
+                        .benefits__slide.swiper-slide
+
+                            picture.benefits__icon
+                                source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/benefits-icon-6@2x.webp" media="(min-width: 960px)")
+                                source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/benefits-icon-6@2x.png" media="(min-width: 960px)")
+
+                                img.lazy(src="static/img/general/placeholder-image.webp" alt="Image", data-src="static/img/general/benefits-icon-6.png" )
+
+                            .benefits__text — We are focused only on high-quality results
+
+
+                    .benefits__pagination.swiper-pagination.slider__pagination
+                    //- .swiper-button-prev
+                    //- .swiper-button-next
+                    //- .swiper-scrollbar
+
+            //- .benefits__circle.circle
+            //- .benefits__circle.benefits__circle_2.circle
+
+            != pugHelpers.Icon.call(locals, {iconName: 'benefits-path-left', className: 'benefits__path'})
+            != pugHelpers.Icon.call(locals, {iconName: 'benefits-path-right', className: 'benefits__path benefits__path_2'})
+
+
+            picture.benefits__tg
+                source(type="image/webp", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/benefits-tg-icon@2x.webp" )
+                source(type="image/png", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/benefits-tg-icon@2x.png" )
+
+                img.lazy(src="static/img/general/placeholder-image.webp" alt="Image", data-src="static/img/general/benefits-tg-icon.png" )

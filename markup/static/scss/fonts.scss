@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'SF Pro Display';
+    src: local('SF Pro Display Semibold'), local('SFProDisplay-Semibold'),
+        url('../fonts/hinted-subset-SFProDisplay-Semibold.woff2') format('woff2'),
+        url('../fonts/hinted-subset-SFProDisplay-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: local('SF Pro Display Regular'), local('SFProDisplay-Regular'),
+        url('../fonts/hinted-subset-SFProDisplay-Regular.woff2') format('woff2'),
+        url('../fonts/hinted-subset-SFProDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: local('SF Pro Display Medium'), local('SFProDisplay-Medium'),
+        url('../fonts/hinted-subset-SFProDisplay-Medium.woff2') format('woff2'),
+        url('../fonts/hinted-subset-SFProDisplay-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: local('SF Pro Display Heavy'), local('SFProDisplay-Heavy'),
+        url('../fonts/hinted-subset-SFProDisplay-Heavy.woff2') format('woff2'),
+        url('../fonts/hinted-subset-SFProDisplay-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: local('SF Pro Display Bold'), local('SFProDisplay-Bold'),
+        url('../fonts/hinted-subset-SFProDisplay-Bold.woff2') format('woff2'),
+        url('../fonts/hinted-subset-SFProDisplay-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat ExtraLight'), local('Montserrat-ExtraLight'),
+        url('../fonts/hinted-subset-Montserrat-ExtraLight.woff2') format('woff2'),
+        url('../fonts/hinted-subset-Montserrat-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat Medium'), local('Montserrat-Medium'),
+        url('../fonts/hinted-subset-Montserrat-Medium.woff2') format('woff2'),
+        url('../fonts/hinted-subset-Montserrat-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: local('Manrope Regular'), local('Manrope-Regular'),
+        url('../fonts/hinted-subset-Manrope-Regular.woff2') format('woff2'),
+        url('../fonts/hinted-subset-Manrope-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: local('Manrope Medium'), local('Manrope-Medium'),
+        url('../fonts/hinted-subset-Manrope-Medium.woff2') format('woff2'),
+        url('../fonts/hinted-subset-Manrope-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: local('Manrope Bold'), local('Manrope-Bold'),
+        url('../fonts/hinted-subset-Manrope-Bold.woff2') format('woff2'),
+        url('../fonts/hinted-subset-Manrope-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: local('Manrope Semibold'), local('Manrope-Semibold'),
+        url('../fonts/hinted-subset-Manrope-Semibold.woff2') format('woff2'),
+        url('../fonts/hinted-subset-Manrope-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter Bold'), local('Inter-Bold'),
+        url('../fonts/hinted-subset-Inter-Bold.woff2') format('woff2'),
+        url('../fonts/hinted-subset-Inter-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+$montserrat: 'Montserrat', Helvetica, Arial, sans-serif;
+$manrope: 'Manrope', Helvetica, Arial, sans-serif;
+$inter: 'Inter', Helvetica, Arial, sans-serif;
+$sfpro: 'SF Pro Display', Helvetica, Arial, sans-serif;
+$arial: Arial, 'Helvetica Neue', Helvetica, sans-serif;

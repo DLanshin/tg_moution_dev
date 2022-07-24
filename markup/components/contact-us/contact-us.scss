@@ -1,0 +1,162 @@
+.contact-us {
+  position: relative;
+  overflow: hidden;
+  &__container {
+    // padding-top: 130px;
+    padding-top: $padding-container-mob;
+    // padding-bottom: $padding-container-mob;
+
+    @include mq($small) {
+      padding-bottom: $padding-container-mob;
+    }
+
+    @include mq($large) {
+      padding-top: 230px;
+      padding-bottom: 166px;
+    }
+
+  }
+
+  &__title {
+    margin-bottom: $margin-title-third-mob;
+    @include mq($medium) {
+      margin-bottom: $margin-title-secondary;
+    }
+  }
+
+  &__entry {
+    width: 100%;
+    @include mq($large) {
+      // max-width: 332px;
+      max-width: 372px;
+    }
+
+  }
+
+  &__text {
+    margin-bottom: 24px;
+    font-family: $sfpro;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2083;
+    @include mq($small) {
+      margin-bottom: 30px;
+      @include font-size(32px);
+      line-height: 1.187;
+    }
+
+  }
+
+  &__badge {
+    padding-top: 9px;
+    padding-right: 15px;
+    padding-bottom: 9px;
+    padding-left: 15px;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 13px;
+    background: $color-soft;
+    font-family: $sfpro;
+    font-weight: 500;
+    font-style: 14px;
+    line-height: 1.2143;
+    border-radius: 6px;
+
+    @include mq($medium) {
+      padding-top: 13px;
+      padding-right: 37px;
+      padding-bottom: 10px;
+      padding-left: 37px;
+      line-height: 1.16;
+      font-size: 18px;
+    }
+
+  }
+
+  &__badge-icon {
+    max-width: 73px;
+    width: 100%;
+    flex-shrink: 0;
+  }
+
+  &__badge-text {
+
+  }
+
+  &__bottom {
+    margin-top: 24px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0 12px;
+
+    @include mq($medium) {
+      margin-top: 30px;
+      gap: 0 24px;
+
+    }
+  }
+
+  &__button {
+    &:hover {
+      + .contact-us__arrow {
+        // transform: translateX(100%);
+        animation: arrow .7s 3 ease-in-out;
+        @include tr(.3s ease);
+      }
+    }
+  }
+
+  &__arrow {
+    width: 56px;
+    @include tr(.7s ease);
+    @include mq($medium) {
+      width: auto;
+    }
+  }
+
+  &__image {
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+    display: block;
+    height: 150px;
+    // margin-top: -160px;
+    @include mq($small) {
+      position: absolute;
+
+      height: auto;
+    }
+    @include mq($medium) {
+      max-width: 1870px;
+    }
+    @include mq($large) {
+
+    }
+
+    img {
+      display: block;
+    }
+
+  }
+
+}
+
+
+@keyframes arrow {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(30px);
+  }
+
+  80% {
+    transform: translateX(-5px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}

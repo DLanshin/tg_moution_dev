@@ -1,0 +1,74 @@
+mixin contact-us(data)
+    section#contact-us.contact-us.animate__animated
+        .contact-us__container.container
+            h2.contact-us__title.title.title_secondary  <span>07</span> Связь с нами.
+
+            .contact-us__entry
+                .contact-us__text Остались вопросы?
+
+                a.contact-us__badge(href="")
+                    picture.contact-us__badge-icon
+                        source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/contact-us-icon@2x.webp" media="(min-width: 960px)")
+                        source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/contact-us-icon@2x.png" media="(min-width: 960px)")
+
+                        //- source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/hero-bg-tablet@2x.webp" media="(min-width: 640px)")
+                        //- source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/hero-bg-tablet@2x.png" media="(min-width: 640px)")
+
+                        //- source(type="image/webp", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/contact-us-mob@2x.webp" )
+                        //- source(type="image/png", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/contact-us-mob@2x.png" )
+
+                        img.lazy(src="static/img/general/placeholder-image.webp" alt="Изображение", data-src="static/img/general/contact-us-icon.png" )
+
+                    .contact-us__badge-text Реклама в соц. сетях </br>@Your_telegram_bot
+
+                .contact-us__bottom
+                    a.contact-us__button.button(href="#") Задать вопрос
+                    != pugHelpers.Icon.call(locals, {iconName: 'arrow-right', className: 'contact-us__arrow'})
+
+
+        picture.contact-us__image
+            source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/contact-us-desktop@2x.webp" media="(min-width: 960px)")
+            source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/contact-us-desktop@2x.png" media="(min-width: 960px)")
+
+            //- source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/hero-bg-tablet@2x.webp" media="(min-width: 640px)")
+            //- source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/hero-bg-tablet@2x.png" media="(min-width: 640px)")
+
+            source(type="image/webp", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/contact-us-mob@2x.webp" )
+            source(type="image/png", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/contact-us-mob@2x.png" )
+
+            img.lazy(src="static/img/general/placeholder-image.webp" alt="Изображение", data-src="static/img/general/contact-us-desktop.png" )
+
+
+mixin contact-us-en(data)
+    section#contact-us.contact-us.animate__animated
+        .contact-us__container.container
+            h2.contact-us__title.title.title_secondary <span>07</span> Contact us.
+
+            .contact-us__entry
+                .contact-us__text Any other questions?
+
+                a.contact-us__badge(href="")
+                    picture.contact-us__badge-icon
+                        source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/contact-us-icon@2x.webp" media="(min-width: 960px)")
+                        source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/contact-us-icon@2x.png" media="(min-width: 960px)")
+
+                        img.lazy(src="static/img/general/placeholder-image.webp" alt="Image", data-src="static/img/general/contact-us-icon.png" )
+
+                    .contact-us__badge-text Advertising on social media </br>@Your_telegram_bot
+
+                .contact-us__bottom
+                    a.contact-us__button.button(href="#") Ask a question
+                    != pugHelpers.Icon.call(locals, {iconName: 'arrow-right', className: 'contact-us__arrow'})
+
+
+        picture.contact-us__image
+            source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/contact-us-desktop@2x.webp" media="(min-width: 960px)")
+            source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/contact-us-desktop@2x.png" media="(min-width: 960px)")
+
+            //- source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/hero-bg-tablet@2x.webp" media="(min-width: 640px)")
+            //- source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/hero-bg-tablet@2x.png" media="(min-width: 640px)")
+
+            source(type="image/webp", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/contact-us-mob@2x.webp" )
+            source(type="image/png", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/contact-us-mob@2x.png" )
+
+            img.lazy(src="static/img/general/placeholder-image.webp" alt="Image", data-src="static/img/general/contact-us-desktop.png" )

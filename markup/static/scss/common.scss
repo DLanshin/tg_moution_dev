@@ -1,0 +1,122 @@
+// Common styles of the project
+
+html,
+body {
+  height: 100%;
+}
+
+.page {
+  background: $color-white;
+  color: $color-black;
+  font-display: swap;
+  font-family: $manrope;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.357;
+
+  @include mq($medium) {
+    font-size: 18px;
+    line-height: 1.388;
+  }
+
+  &__wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  &__main {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+    // overflow: hidden;
+  }
+
+}
+
+
+.page_nav_open {
+  overflow-y: hidden;
+
+  .header__logo {
+    z-index: 3;
+    position: relative;
+
+  }
+
+  .header__langs {
+    margin-right: 56px;
+
+  }
+
+
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30px;
+  width: 100%;
+  min-width: 320px;
+  max-width: 100%;
+
+  @include mq($small) {}
+
+  @include mq($large) {
+    // padding-right: 30px;
+    // padding-left: 30px;
+    max-width: 1540px;
+  }
+}
+
+img.lazy {
+  max-width: 100%;
+  height: auto;
+
+  &.lazy {
+    opacity: 0;
+  }
+
+  &:not(.initial) {
+    @include tr(opacity .3s);
+  }
+
+  &.initial,
+  &.loaded,
+  &.error {
+    opacity: 1;
+  }
+
+}
+
+img.lazy:not([src]):not([srcset]) {
+  visibility: hidden;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+  @include tr(.3s ease);
+
+  &:hover {
+    color: currentColor;
+    text-decoration: none;
+  }
+}
+
+// .mfp-bg {
+//     background-color: rgba(26, 26, 26, 1);
+//     opacity: 1;
+// }
+
+// button.mfp-close,
+// button.mfp-arrow {
+//     top: 10px;
+//     right: 10px;
+//     font-size: 70px;
+// }

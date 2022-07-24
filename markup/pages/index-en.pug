@@ -1,0 +1,46 @@
+doctype html
+html(class="no-js", lang="ru")
+
+    include ../components/head/head.pug
+
+    include ../components/header/header.pug
+    include ../components/nav/nav.pug
+    include ../components/hero/hero.pug
+    include ../components/included/included.pug
+    include ../components/pricing/pricing.pug
+    include ../components/benefits/benefits.pug
+    include ../components/service/service.pug
+    include ../components/write/write.pug
+    include ../components/video/video.pug
+    include ../components/audience/audience.pug
+    include ../components/examples/examples.pug
+    include ../components/reviews/reviews.pug
+    include ../components/contact-us/contact-us.pug
+    include ../components/go-to-top/go-to-top.pug
+
+    include ../components/footer/footer.pug
+
+    head
+        +head(head.defaults)
+    body.page
+        |%=symbols=%
+
+        .page__wrapper
+            +header-en()
+            main.page__main
+                +hero-en()
+                +included-en()
+                +pricing-en()
+                +benefits-en()
+                +service-en()
+                +examples-en()
+                +reviews-en()
+                +contact-us-en()
+
+
+            +footer-en().page__footer
+        +go-to-top()
+
+        //- script(src='%=static=%js/separate-js/jquery.min.js' defer)
+        //- script(src='%=static=%js/separate-js/bootstrap.bundle.min.js' defer)
+        script(src='%=static=%js/main%=hash=%%=min=%.js' defer)

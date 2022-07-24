@@ -1,0 +1,86 @@
+mixin hero(data)
+    section.hero&attributes(attributes)
+        .hero__container.container
+            .hero__entry
+                h1.hero__title.title Эффективное продвижение в Telegram.
+                .hero__text
+                    p Привлеки внимание ЦА (целевой аудитории) и донеси до нее информацию о своем товаре, услуге или новости!
+
+                .hero__buttons
+                    a.hero__button.button(href="#") Заказать услугу
+                    a.hero__button.button.button_stroke(href="#") Узнать больше о других услугах
+
+            ul.hero__advertising.advertising
+                li.advertising__item.advertising__item_active
+                    a.advertising__link(href="#")
+                        span.advertising__text Реклама в Telegram
+                        != pugHelpers.Icon.call(locals, {iconName: 'telegram-icon', className: 'advertising__icon'})
+                li.advertising__item.advertising__item_inst
+                    a.advertising__link(href="#")
+                        span.advertising__text  Реклама в Инстаграм
+                        != pugHelpers.Icon.call(locals, {iconName: 'instagram-icon', className: 'advertising__icon'})
+                li.advertising__item.advertising__item_discord
+                    a.advertising__link(href="#")
+                        span.advertising__text Реклама в Дискорд
+                        != pugHelpers.Icon.call(locals, {iconName: 'discord-icon', className: 'advertising__icon'})
+                li.advertising__item.advertising__item_vk
+                    a.advertising__link(href="#")
+                        span.advertising__text Реклама в ВК
+                        != pugHelpers.Icon.call(locals, {iconName: 'vk-icon', className: 'advertising__icon'})
+
+            != pugHelpers.Icon.call(locals, {iconName: 'hero-path', className: 'hero__path'})
+
+            picture.hero__image
+                source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/hero-img-desktop@2x.webp" media="(min-width: 592px)")
+                source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/hero-img-desktop@2x.png" media="(min-width: 592px)")
+
+                source(type="image/webp", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/hero-img-mob@2x.webp" )
+                source(type="image/png", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/hero-img-mob@2x.png" )
+
+                img.lazy(src="static/img/general/placeholder-image.webp" alt="Изображение", data-src="static/img/general/hero-img-desktop.png" )
+
+            .hero__circle.circle
+
+
+mixin hero-en(data)
+    section.hero&attributes(attributes)
+        .hero__container.container
+            .hero__entry
+                h1.hero__title.title Effective promotion in Telegram.
+                .hero__text
+                    p Have attracted the attention of the target audience and inform them about your product, service or news!
+
+                .hero__buttons
+                    a.hero__button.button(href="#") Order a service
+                    a.hero__button.button.button_stroke(href="#") Learn more about other services
+
+            ul.hero__advertising.advertising
+                li.advertising__item.advertising__item_active
+                    a.advertising__link(href="#")
+                        span.advertising__text Advertising in Telegram
+                        != pugHelpers.Icon.call(locals, {iconName: 'telegram-icon', className: 'advertising__icon'})
+                li.advertising__item.advertising__item_inst
+                    a.advertising__link(href="#")
+                        span.advertising__text  Advertising on Instagram
+                        != pugHelpers.Icon.call(locals, {iconName: 'instagram-icon', className: 'advertising__icon'})
+                li.advertising__item.advertising__item_discord
+                    a.advertising__link(href="#")
+                        span.advertising__text Advertising in Discord
+                        != pugHelpers.Icon.call(locals, {iconName: 'discord-icon', className: 'advertising__icon'})
+                li.advertising__item.advertising__item_vk
+                    a.advertising__link(href="#")
+                        span.advertising__text Advertising in VK
+                        != pugHelpers.Icon.call(locals, {iconName: 'vk-icon', className: 'advertising__icon'})
+
+            != pugHelpers.Icon.call(locals, {iconName: 'hero-path', className: 'hero__path'})
+
+            picture.hero__image
+                source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/hero-img-desktop@2x.webp" media="(min-width: 592px)")
+                source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/hero-img-desktop@2x.png" media="(min-width: 592px)")
+
+                source(type="image/webp", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/hero-img-mob@2x.webp" )
+                source(type="image/png", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/hero-img-mob@2x.png" )
+
+                img.lazy(src="static/img/general/placeholder-image.webp" alt="Image", data-src="static/img/general/hero-img-desktop.png" )
+
+            .hero__circle.circle

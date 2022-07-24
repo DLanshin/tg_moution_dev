@@ -1,0 +1,31 @@
+mixin video(data)
+    section.video&attributes(attributes)
+        .video__container.container
+
+            != pugHelpers.Icon.call(locals, {iconName: 'video-path', className: 'video__path'})
+            != pugHelpers.Icon.call(locals, {iconName: 'video-path-2', className: 'video__path video__path_2'})
+
+
+            h3.video__title.title.title_third Видео о нашем сервисе
+            .video__w
+                video.video__object(controls='' src='https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4' poster='static/img/general/video-placeholder.webp' )
+
+                    source(src='https://archive.org/download/ElephantsDream/ed_hd.ogv' type='video/ogg')
+                    source(src='https://archive.org/download/ElephantsDream/ed_hd.avi' type='video/avi')
+                    source(src='https://archive.org/download/ElephantsDream/ed_1024_512kb.mp4' type='video/mp4')
+
+
+mixin video-en(data)
+    section.video&attributes(attributes)
+        .video__container.container
+
+            != pugHelpers.Icon.call(locals, {iconName: 'video-path', className: 'video__path'})
+            != pugHelpers.Icon.call(locals, {iconName: 'video-path-2', className: 'video__path video__path_2'})
+
+            h3.video__title.title.title_third Video about our service
+            .video__w
+                video.video__object(controls='' playsinline src='//archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4' poster='static/img/general/video-placeholder.webp' )
+
+                    source(src='//archive.org/download/ElephantsDream/ed_hd.ogv' type='video/ogg')
+                    source(src='//archive.org/download/ElephantsDream/ed_hd.avi' type='video/avi')
+                    source(src='//archive.org/download/ElephantsDream/ed_1024_512kb.mp4' type='video/mp4')

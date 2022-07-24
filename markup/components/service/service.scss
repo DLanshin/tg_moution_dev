@@ -1,0 +1,41 @@
+.service {
+  padding-bottom: $padding-container-mob;
+  padding-top: $padding-container-mob;
+  @include mq($large) {
+    padding-top: 115px;
+    padding-bottom: 115px;
+  }
+  &__container {
+  }
+
+  &__title {
+    margin-bottom: $margin-title-secondary-mob;
+    @include mq($medium) {
+      margin-bottom: $margin-title-secondary;
+    }
+  }
+
+  &__write {
+    margin-top: 0;
+    padding-bottom: 74px;
+    @include mq($medium) {
+      // margin-top: -240px;
+      padding-bottom: 130px;
+    }
+  }
+
+  &__video {
+    padding-bottom: 64px;
+    @include mq($medium) {
+      padding-bottom: 130px;
+    }
+  }
+
+  &__audience {
+
+  }
+
+
+
+
+}

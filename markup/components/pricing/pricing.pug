@@ -1,0 +1,147 @@
+mixin pricing(data)
+    section#pricing.pricing.animate__animated
+        .pricing__container.container
+            h2.pricing__title.title.title_secondary <span>02</span> Ценообразование.
+
+            .pricing__services
+                article.pricing__service
+                    a.pricing__link(href="#")
+                        .pricing__entry
+                            .pricing__item-title Рассылка по ЛС
+                            dl.pricing__list
+                                .pricing__list-item
+                                    dt.pricing__term От 100
+                                    dd.pricing__desc — 3.2 РУБ
+                                .pricing__list-item
+                                    dt.pricing__term От 1000
+                                    dd.pricing__desc — 3 РУБ
+                                .pricing__list-item
+                                    dt.pricing__term От 50.000
+                                    dd.pricing__desc — 2.8 РУБ
+                                .pricing__list-item
+                                    dt.pricing__term От 100.000
+                                    dd.pricing__desc — 2.5 РУБ
+
+                            .pricing__note Минимальная сумма заказа 100₽
+
+                        .pricing__button-w
+                            span.pricing__button Заказать
+
+                article.pricing__service
+                    a.pricing__link(href="#")
+                        .pricing__entry
+                            .pricing__item-title Рассылка по чатам
+                            .pricing__item-text В зависимости от <span>количества чатов</span>, обсуждается индивидуально
+
+                        .pricing__button-w
+                            span.pricing__button Заказать
+
+
+                article.pricing__service
+                    a.pricing__link(href="#")
+                        .pricing__entry
+                            .pricing__item-title Составление промо - текста
+                            .pricing__item-text Оценка стоимости - после просмотра <span>технического задания</span>
+
+                        .pricing__button-w
+                            span.pricing__button Заказать
+
+                article.pricing__service
+                    a.pricing__link(href="#")
+                        .pricing__entry
+                            .pricing__item-title Парсинг
+                            .pricing__item-text <span>Бесплатно</span> при заказе услуги
+
+                        .pricing__button-w
+                            span.pricing__button Заказать
+
+
+            .pricing__circle.circle
+            .pricing__circle.pricing__circle_2.circle
+
+            != pugHelpers.Icon.call(locals, {iconName: 'prices-path', className: 'pricing__path'})
+            != pugHelpers.Icon.call(locals, {iconName: 'prices-path', className: 'pricing__path pricing__path_2'})
+
+            picture.pricing__tg.pricing__tg_left
+                source(type="image/webp", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/prices-tg-left-desktop@2x.webp" )
+                source(type="image/png", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/prices-tg-left-desktop@2x.png" )
+                img.lazy(src="static/img/general/placeholder-image.webp" alt="Изображение", data-src="static/img/general/prices-tg-left-desktop.png" )
+
+            picture.pricing__tg.pricing__tg_right
+                source(type="image/webp", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/prices-tg-right-desktop@2x.webp" )
+                source(type="image/png", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/prices-tg-right-desktop@2x.png" )
+                img.lazy(src="static/img/general/placeholder-image.webp" alt="Изображение", data-src="static/img/general/prices-tg-right-desktop.png" )
+
+
+mixin pricing-en(data)
+    section#pricing.pricing.animate__animated
+        .pricing__container.container
+            h2.pricing__title.title.title_secondary <span>02</span> Pricing.
+
+            .pricing__services
+                article.pricing__service
+                    a.pricing__link(href="#")
+                        .pricing__entry
+                            .pricing__item-title Mailing by PM
+                            dl.pricing__list
+                                .pricing__list-item
+                                    dt.pricing__term from 100
+                                    dd.pricing__desc — 0.1$ per message
+                                .pricing__list-item
+                                    dt.pricing__term from 1000
+                                    dd.pricing__desc — 0.09 $
+                                .pricing__list-item
+                                    dt.pricing__term from 50.000
+                                    dd.pricing__desc — 0.08 $
+                                .pricing__list-item
+                                    dt.pricing__term from 100.000
+                                    dd.pricing__desc — 0.07 $
+
+                            .pricing__note The minimum order amount is 12$
+
+                        .pricing__button-w
+                            span.pricing__button Order
+
+                article.pricing__service
+                    a.pricing__link(href="#")
+                        .pricing__entry
+                            .pricing__item-title Mailing by chats
+                            .pricing__item-text Depending on the <span>number of chats</span>, оit is discussed individually
+                        .pricing__button-w
+                            span.pricing__button Order
+
+
+                article.pricing__service
+                    a.pricing__link(href="#")
+                        .pricing__entry
+                            .pricing__item-title Making a promo text
+                            .pricing__item-text Cost estimation - after viewing the <span>terms of reference</span>
+
+                        .pricing__button-w
+                            span.pricing__button Order
+
+                article.pricing__service
+                    a.pricing__link(href="#")
+                        .pricing__entry
+                            .pricing__item-title Parsing
+                            .pricing__item-text <span>Free</span> of charge when ordering the service
+
+                        .pricing__button-w
+                            span.pricing__button Order
+
+
+            .pricing__circle.circle
+            .pricing__circle.pricing__circle_2.circle
+
+            != pugHelpers.Icon.call(locals, {iconName: 'prices-path', className: 'pricing__path'})
+            != pugHelpers.Icon.call(locals, {iconName: 'prices-path', className: 'pricing__path pricing__path_2'})
+
+            picture.pricing__tg.pricing__tg_left
+                source(type="image/webp", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/prices-tg-left-desktop@2x.webp" )
+                source(type="image/png", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/prices-tg-left-desktop@2x.png" )
+                img.lazy(src="static/img/general/placeholder-image.webp" alt="Image", data-src="static/img/general/prices-tg-left-desktop.png" )
+
+            picture.pricing__tg.pricing__tg_right
+                source(type="image/webp", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/prices-tg-right-desktop@2x.webp" )
+                source(type="image/png", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/prices-tg-right-desktop@2x.png" )
+                img.lazy(src="static/img/general/placeholder-image.webp" alt="Image", data-src="static/img/general/prices-tg-right-desktop.png" )

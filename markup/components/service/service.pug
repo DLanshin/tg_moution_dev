@@ -1,0 +1,24 @@
+include ../write/write.pug
+include ../video/video.pug
+include ../audience/audience.pug
+
+mixin service(data)
+    section.service.animate__animated
+        .service__container.container
+            h2.service__title.title.title_secondary.animate__animated  <span>04</span> Сервис.
+
+
+        +write().service__write
+        +video().service__video
+        +audience().service__audience
+
+mixin service-en(data)
+    section.service.animate__animated
+        .service__container.container
+            h2.service__title.title.title_secondary <span>04</span> Service.
+
+        +write-en().service__write
+
+        +video-en().service__video
+
+        +audience-en().service__audience

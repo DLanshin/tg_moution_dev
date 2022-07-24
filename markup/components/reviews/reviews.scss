@@ -1,0 +1,175 @@
+.reviews {
+
+  &__container {
+    z-index: 1;
+    position: relative;
+    padding-top: $padding-container-mob;
+    padding-bottom: $padding-container-mob;
+    @include mq($medium) {
+      padding-top: 130px;
+      padding-bottom: 0;
+    }
+    // padding-bottom: 130px;
+  }
+
+  &__circle {
+    bottom: 50px;
+    right: -80px;
+    width: 193px;
+    height: 193px;
+
+    @include mq($medium) {
+      bottom: -100px;
+      right: -220px;
+      width: 298px;
+      height: 298px;
+    }
+
+  }
+
+  // &__circle_2 {
+  //   top: auto;
+  //   left: auto;
+  //   right: 0;
+  //   bottom: -120px;
+  //   width: 193px;
+  // }
+
+  &__path {
+    z-index: -1;
+    position: absolute;
+    right: 13px;
+    bottom: -75px;
+    width: 118px;
+    // height: 398px;
+    transform: rotate(20.84deg);
+
+
+    @include mq($medium) {
+      width: 560px;
+      right: -287px;
+      bottom: -255px;
+      transform: rotate(-1.16deg);
+      // height: 714px;
+    }
+
+  }
+
+  &__title {
+    margin-bottom: $margin-title-secondary-mob;
+    @include mq($medium) {
+      margin-bottom: $margin-title-secondary;
+    }
+  }
+
+  &__slider {
+
+    .swiper-wrapper {
+      flex-wrap: wrap;
+      height: auto !important;
+    }
+  }
+
+  &__slide {
+    width: 100%;
+    height: auto;
+    pointer-events: all;
+
+    @include mq($medium) {
+      max-width: 33.3%;
+
+    }
+  }
+
+  &__review {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 19px 21px 19px 28px;
+    display: flex;
+    align-items: center;
+    background-image: url("data:image/svg+xml,%3Csvg width='480' height='142' viewBox='0 0 480 142' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.86885 6C7.86885 2.68629 10.5551 0 13.8689 0H474C477.314 0 480 2.68629 480 6V136C480 139.314 477.314 142 474 142H0L6.27181 135.225C7.29851 134.116 7.86885 132.66 7.86885 131.149V6Z' fill='%23272D4E'/%3E%3C/svg%3E%0A");
+    background-size: cover;
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    border-radius: 0 8px 8px 0;
+    width: 100%;
+    @include mq($medium){
+      width: 50%;
+    }
+    @include mq($large){
+      width: calc(100% / 3);
+    }
+  }
+
+  &__review-entry {
+
+  }
+
+  &__review-title {
+    margin-bottom: 4px;
+    color: $color-blue;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.388;
+
+    @include mq($small) {
+      @include font-size(18px);
+    }
+
+  }
+
+  &__review-meta {
+    position: absolute;
+    top: 19px;
+    right: 21px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 7px;
+    color: #595F7F;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.333;
+  }
+
+  &__review-views {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3px;
+  }
+
+  &__review-icon {
+    fill: transparent;
+  }
+
+  &__review-date {
+    // margin-bottom: ;
+  }
+
+  &__review-text {
+
+    font-family: $sfpro;
+    font-size: 14px;
+    line-height: 1.3571;
+    color: $color-white;
+
+    @include mq($small) {
+      @include font-size(16px);
+      line-height: 1.5;
+    }
+
+  }
+
+  &__buttons  {
+    margin-top: 24px;
+    @include mq($medium) {
+      margin-top: 60px;
+    }
+  }
+
+  &__button {
+    pointer-events: all;
+  }
+
+}

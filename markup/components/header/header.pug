@@ -1,0 +1,34 @@
+mixin header(data)
+    header.header&attributes(attributes)
+        .header__container.container
+
+            a.header__logo.logo(href="#")
+                != pugHelpers.Icon.call(locals, {iconName: 'logo', className: 'logo__icon'})
+
+            +nav(nav.primaryListRu).header__nav.nav_primary
+
+            .header__langs.langs
+                a.langs__lang(href="/index-en.html")
+                    != pugHelpers.Icon.call(locals, {iconName: 'lang-en', className: 'langs__icon'})
+                    | Eng
+                a.langs__lang.langs__lang_active(href="/index.html")
+                    != pugHelpers.Icon.call(locals, {iconName: 'lang-ru', className: 'langs__icon'})
+                    | Rus
+
+
+mixin header-en(data)
+    header.header&attributes(attributes)
+        .header__container.container
+
+            a.header__logo.logo(href="#")
+                != pugHelpers.Icon.call(locals, {iconName: 'logo', className: 'logo__icon'})
+
+            +nav(nav.primaryListEn).header__nav.nav_primary
+
+            .header__langs.langs
+                a.langs__lang.langs__lang_active(href="/index-en.html")
+                    != pugHelpers.Icon.call(locals, {iconName: 'lang-en', className: 'langs__icon'})
+                    | Eng
+                a.langs__lang(href="/index.html")
+                    != pugHelpers.Icon.call(locals, {iconName: 'lang-ru', className: 'langs__icon'})
+                    | Rus
