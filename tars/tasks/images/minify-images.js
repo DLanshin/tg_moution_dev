@@ -32,7 +32,7 @@ module.exports = () => {
             .pipe(changed(imagesFolderPath))
             .pipe(
                 imagemin([
-                    imagemin.jpegtran({ progressive: true }),
+                    // imagemin.jpegtran({ progressive: true }),
                     imagemin.optipng({ optimizationLevel: 5 }),
                     imagemin.svgo({
                         plugins: [
