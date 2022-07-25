@@ -29,6 +29,7 @@
 
 
   &__item--go-top {
+    display: none;
     overflow: hidden;
     border-radius: 50%;
     width: 60px;
@@ -51,25 +52,25 @@
   }
 
   &__item-text {
-    background-color: #fff;
     margin-right: -30px;
     height: 59px;
     border-top-left-radius: 40px;
-    border: 2px solid $color-blue;
+    background-color: $color-blue;
     color: rgb(39, 45, 78);
-    padding: 14px 30px 0 10px;
+    padding: 19px 30px 0 20px;
     width: 0;
     white-space: nowrap;
     opacity: 0;
     transition: all 0.5s ease;
     position: relative;
     z-index: 150;
+    @include font-size(16px);
     &:hover{
       text-decoration: underline;
     }
   }
   &__item--telegram:hover &__item-text{
-
+    padding-right: 30px;
     width: 195px;
     opacity: 1;
   }
