@@ -3,11 +3,12 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
 
   &__item {
     margin-bottom: 12px;
-    display: flex;
-    justify-content: flex-end;
+    //display: flex;
+    //justify-content: flex-end;
     &:hover {
       .advertising__link {
         @include tr( .3s ease);
@@ -16,72 +17,94 @@
   }
 
   &__item_inst {
-    .advertising__link {
+    .advertising__text {
       background: linear-gradient(143deg, #8F00FF, #E328CD 10%, #FDB913);
       color: #fff;
     }
+    .advertising__icon{
+      border-radius: 50%;
+      background: linear-gradient(143deg, #8F00FF, #E328CD 10%, #FDB913);
+    }
+
   }
 
   &__item_discord {
-    .advertising__link {
+    .advertising__text {
       background: #5662F6;
       color: #fff;
+    }
+    .advertising__icon{
+      border-radius: 50%;
+      background: #5662F6;
     }
   }
 
   &__item_vk {
-    .advertising__link {
+    .advertising__text {
       background: #5195F2;
       color: #fff;
+    }
+    .advertising__icon{
+      border-radius: 50%;
+      background: #5195F2;
     }
   }
 
   &__link {
-    position: relative;
-    padding-top: 19px;
-    padding-bottom: 18px;
-    width: 62px;
+    display: flex;
+    justify-content: flex-end;
     height: 62px;
-    display: inline-flex;
-    justify-content: space-between;
-    align-items: center;
+    min-width: 62px;
+    overflow: hidden;
     gap: 0 29px;
-    background: $color-blue;
     font-weight: 700;
     font-size: 18px;
     line-height: 1;
-    white-space: nowrap;
-    border-radius: 35px 35px 35px 35px;
+
     @include tr( .3s ease);
     @include mq($small) {
-      @include font-size(18px);
+      @include font-size(15px);
     }
 
     &:hover {
-      padding-right: 92px;
-      padding-left: 29px;
-      // max-width: 300px;
-      width: auto;
-      border-radius: 35px 35px 35px 0px;
-      @include tr( .3s ease);
-
       .advertising__text {
-        width: auto;
+        width: 280px;
+        padding-right: 62px;
+        padding-left: 20px;
         visibility: visible;
         opacity: 1;
+        border-radius: 35px 35px 35px 0px;
       }
     }
   }
 
   &__text {
-    visibility: hidden;
+    background: $color-blue;
+    border-radius: 35px 35px 35px 35px;
+    white-space: nowrap;
+    position: relative;
+    z-index: 100;
+    text-align: center;
+    width: 0;
+    padding-top: 20px;
+    margin-right: -62px;
     opacity: 0;
+    @include tr( .5s ease);
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  &__text--small{
+    display: block;
+    @include font-size(8px);
+    margin-top: 4px;
+    text-align: center;
   }
 
   &__icon {
-    position: absolute;
-    top: 0;
-    right: 0;
-    flex-shrink: 0;
+    margin: 0;
+    z-index: 150;
+    width: 62px;
+    height: 62px;
   }
 }

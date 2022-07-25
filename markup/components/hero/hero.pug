@@ -7,25 +7,28 @@ mixin hero(data)
                     p Привлеки внимание ЦА (целевой аудитории) и донеси до нее информацию о своем товаре, услуге или новости!
 
                 .hero__buttons
-                    a.hero__button.button(href="#") Заказать услугу
-                    a.hero__button.button.button_stroke(href="#") Узнать больше о других услугах
+                    a.hero__button.button(href="https://t.me/TGMotion_bot") Заказать услугу
+                    a.hero__button.button.button_stroke(href="https://t.me/TGMotion_bot") Узнать больше о других услугах
 
             ul.hero__advertising.advertising
                 li.advertising__item.advertising__item_active
-                    a.advertising__link(href="#")
+                    a.advertising__link(href="https://t.me/TGMotion_bot")
                         span.advertising__text Реклама в Telegram
                         != pugHelpers.Icon.call(locals, {iconName: 'telegram-icon', className: 'advertising__icon'})
                 li.advertising__item.advertising__item_inst
-                    a.advertising__link(href="#")
+                    a.advertising__link(href="javascript:void(0)")
                         span.advertising__text  Реклама в Инстаграм
+                            span.advertising__text--small (Функционал в разработке)
                         != pugHelpers.Icon.call(locals, {iconName: 'instagram-icon', className: 'advertising__icon'})
                 li.advertising__item.advertising__item_discord
-                    a.advertising__link(href="#")
+                    a.advertising__link(href="javascript:void(0)")
                         span.advertising__text Реклама в Дискорд
+                            span.advertising__text--small (Функционал в разработке)
                         != pugHelpers.Icon.call(locals, {iconName: 'discord-icon', className: 'advertising__icon'})
                 li.advertising__item.advertising__item_vk
-                    a.advertising__link(href="#")
+                    a.advertising__link(href="javascript:void(0)")
                         span.advertising__text Реклама в ВК
+                            span.advertising__text--small (Функционал в разработке)
                         != pugHelpers.Icon.call(locals, {iconName: 'vk-icon', className: 'advertising__icon'})
 
             != pugHelpers.Icon.call(locals, {iconName: 'hero-path', className: 'hero__path'})
@@ -51,25 +54,28 @@ mixin hero-en(data)
                     p Have attracted the attention of the target audience and inform them about your product, service or news!
 
                 .hero__buttons
-                    a.hero__button.button(href="#") Order a service
-                    a.hero__button.button.button_stroke(href="#") Learn more about other services
+                    a.hero__button.button(href="https://t.me/TGMotion_bot") Order a service
+                    a.hero__button.button.button_stroke(href="https://t.me/TGMotion_bot") Learn more about other services
 
             ul.hero__advertising.advertising
                 li.advertising__item.advertising__item_active
-                    a.advertising__link(href="#")
+                    a.advertising__link(href="https://t.me/TGMotion_bot")
                         span.advertising__text Advertising in Telegram
                         != pugHelpers.Icon.call(locals, {iconName: 'telegram-icon', className: 'advertising__icon'})
                 li.advertising__item.advertising__item_inst
-                    a.advertising__link(href="#")
+                    a.advertising__link(href="javascript:void(0)")
                         span.advertising__text  Advertising on Instagram
+                            span.advertising__text--small (in the pipeline)
                         != pugHelpers.Icon.call(locals, {iconName: 'instagram-icon', className: 'advertising__icon'})
                 li.advertising__item.advertising__item_discord
-                    a.advertising__link(href="#")
+                    a.advertising__link(href="javascript:void(0)")
                         span.advertising__text Advertising in Discord
+                            span.advertising__text--small (in the pipeline)
                         != pugHelpers.Icon.call(locals, {iconName: 'discord-icon', className: 'advertising__icon'})
                 li.advertising__item.advertising__item_vk
-                    a.advertising__link(href="#")
+                    a.advertising__link(href="javascript:void(0)")
                         span.advertising__text Advertising in VK
+                            span.advertising__text--small (in the pipeline)
                         != pugHelpers.Icon.call(locals, {iconName: 'vk-icon', className: 'advertising__icon'})
 
             != pugHelpers.Icon.call(locals, {iconName: 'hero-path', className: 'hero__path'})

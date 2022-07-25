@@ -3,6 +3,7 @@ mixin fx-ctrl-panel(data)
         .fix-controls__items
             button#to-top.fix-controls__item.fix-controls__item--go-top
                 != pugHelpers.Icon.call(locals, {iconName: 'slider-arrow', className: 'fix-controls__icon'})
-            a.fix-controls__item.fix-controls__item--telegram
+            a.fix-controls__item.fix-controls__item--telegram(href="https://t.me/TGMotion_bot", target="_blank")
                 span.fix-controls__item-text Заказать услугу
                 != pugHelpers.Icon.call(locals, {iconName: 'telegram-icon', className: 'fix-controls__icon'})
+

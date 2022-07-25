@@ -2,7 +2,7 @@ mixin header(data)
     header.header&attributes(attributes)
         .header__container.container
 
-            a.header__logo.logo(href="#")
+            a.header__logo.logo(href="/")
                 != pugHelpers.Icon.call(locals, {iconName: 'logo', className: 'logo__icon'})
 
             +nav(nav.primaryListRu).header__nav.nav_primary
@@ -20,7 +20,7 @@ mixin header-en(data)
     header.header&attributes(attributes)
         .header__container.container
 
-            a.header__logo.logo(href="#")
+            a.header__logo.logo(href="/")
                 != pugHelpers.Icon.call(locals, {iconName: 'logo', className: 'logo__icon'})
 
             +nav(nav.primaryListEn).header__nav.nav_primary

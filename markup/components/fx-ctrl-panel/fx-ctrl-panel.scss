@@ -1,113 +1,88 @@
-.fix-controls{
-  z-index: 999;
+.fix-controls {
   position: fixed;
   bottom: 20px;
   right: 15px;
-  @include mq($medium){
+  display: none;
+  z-index: 100;
+  @include mq($medium) {
     bottom: 50px;
     right: 30px;
   }
-  &__items{
+
+  &__items {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
   }
-  &__item{
-    z-index: 99;
-    position: relative;
+
+  &__item {
     margin-bottom: 10px;
     display: flex;
     border: none;
-    outline: none;
+    //outline: none;
     color: white;
     cursor: pointer;
     font-size: 18px;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-
-
   }
 
-  &__item-text{
-    white-space: nowrap;
-    position: absolute;
-    right: 30px;
-    opacity: 0;
-    border-top-left-radius: 40px;
-    border-top: 2px solid $color-blue;
-    border-bottom: 2px solid $color-blue;
-    border-left: 2px solid $color-blue;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    padding: 0 30px 0 20px;
-    width: 0;
-    height: 60px;;
-    transition: all 0.8s ease;
-    z-index: -1;
-  }
-  &__item--go-top{
+
+  &__item--go-top {
     overflow: hidden;
     border-radius: 50%;
     width: 60px;
     height: 60px;
     background-color: $color-blue;
     transition: all 0.5s ease;
-    &:hover{
+
+    &:hover {
       opacity: 0.7;
       transform: scale(1.1);
 
     }
   }
-  &__item--telegram{
-    overflow: initial;
-    height: 60px;
-    z-index: 10;
+
+  &__item--telegram {
     box-shadow: 0 0 0 0 rgba(12, 144, 181, 0.5);
-    &:hover .fix-controls__item-text{
-        opacity: 1;
-        width: 210px;
+    background: transparent;
+    justify-content: flex-end;
+    overflow: hidden;
+  }
+
+  &__item-text {
+    background-color: #fff;
+    margin-right: -30px;
+    height: 59px;
+    border-top-left-radius: 40px;
+    border: 2px solid $color-blue;
+    color: rgb(39, 45, 78);
+    padding: 14px 30px 0 10px;
+    width: 0;
+    white-space: nowrap;
+    opacity: 0;
+    transition: all 0.5s ease;
+    position: relative;
+    z-index: 150;
+    &:hover{
+      text-decoration: underline;
     }
   }
-  &__item--go-top &__icon{
-    fill:transparent;
+  &__item--telegram:hover &__item-text{
+
+    width: 195px;
+    opacity: 1;
+  }
+
+  &__icon {
+    position: relative;
+    z-index: 160;
+    width: 59px;
+    height: 59px;
+  }
+
+  &__item--go-top &__icon {
+    fill: transparent;
     transform: rotate(-90deg);
-  }
-}
-@-webkit-keyframes pulse-btn {
-  0% {
-    -webkit-box-shadow: 0 0 0 0 rgba(12, 144, 181, 0.5);
-  }
-  70% {
-    -webkit-box-shadow: 0 0 0 13px rgba(12, 144, 181, 0);
-  }
-  100% {
-    -webkit-box-shadow: 0 0 0 0 rgba(12, 144, 181, 0);
-  }
-}
-@keyframes pulse-btn {
-  0% {
-    -moz-box-shadow: 0 0 0 0 rgba(12, 144, 181, 0.5);
-    box-shadow: 0 0 0 0 rgba(12, 144, 181, 0.5);
-  }
-  70% {
-    -moz-box-shadow: 0 0 0 13px rgba(12, 144, 181, 0);
-    box-shadow: 0 0 0 13px rgba(12, 144, 181, 0);
-  }
-  100% {
-    -moz-box-shadow: 0 0 0 0 rgba(12, 144, 181, 0);
-    box-shadow: 0 0 0 0 rgba(12, 144, 181, 0);
-  }
-}
-@-webkit-keyframes pulse-btn {
-  0% {
-    -webkit-box-shadow: 0 0 0 0 rgba(12, 144, 181, 0.6);
-  }
-  70% {
-    -webkit-box-shadow: 0 0 0 14px rgba(12, 144, 181, 0.4);
-  }
-  100% {
-    -webkit-box-shadow: 0 0 0 0 rgba(12, 144, 181, 0);
   }
 }

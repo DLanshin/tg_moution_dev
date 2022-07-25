@@ -3,7 +3,7 @@ include ../nav/nav.pug
 mixin footer(data)
     footer.footer&attributes(attributes)
         .footer__container.container
-            a.footer__logo.logo(href="#")
+            a.footer__logo.logo(href="/")
                 != pugHelpers.Icon.call(locals, {iconName: 'logo-second', className: 'logo__icon'})
 
             +nav(nav.primaryListRu).footer__nav.nav_secondary
@@ -20,7 +20,7 @@ mixin footer(data)
 mixin footer-en(data)
     footer.footer&attributes(attributes)
         .footer__container.container
-            a.footer__logo.logo(href="#")
+            a.footer__logo.logo(href="/")
                 != pugHelpers.Icon.call(locals, {iconName: 'logo-second', className: 'logo__icon'})
 
             +nav(nav.primaryListEn).footer__nav.nav_secondary
