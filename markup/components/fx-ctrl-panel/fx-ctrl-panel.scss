@@ -1,0 +1,97 @@
+
+.fix-controls{
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  @include mq($medium){
+    bottom: 50px;
+    right: 70px;
+  }
+  &__items{
+    display: flex;
+    flex-direction: column;
+  }
+  &__item{
+    position: relative;
+    margin-bottom: 10px;
+    display: flex;
+    width: 60px;
+    height: 60px;
+    border: none;
+    outline: none;
+    background-color: $color-blue;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-wrap: wrap;
+
+    &:hover{
+      opacity: 0.8;
+      transform: scale(1.05);
+    }
+  }
+  &__item--go-top{
+    display: none;
+    z-index: 9999;
+  }
+  &__item--telegram{
+    z-index: 10;
+    box-shadow: 0 0 0 0 rgba(12, 144, 181, 0.5);
+    //animation: linear 2s infinite pulse-btn;
+  }
+  &__item--go-top &__icon,
+  &__item--go-top &__icon--hidden{
+    fill:transparent;
+    transform: rotate(-90deg);
+  }
+
+  &__item--go-top &__icon--hidden{
+    margin-top: -80px;
+    transition: margin-top 0.5s ease;
+  }
+
+  &__item--go-top:hover &__icon--hidden{
+    margin-top: 0;
+  }
+}
+@-webkit-keyframes pulse-btn {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(12, 144, 181, 0.5);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 13px rgba(12, 144, 181, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(12, 144, 181, 0);
+  }
+}
+@keyframes pulse-btn {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(12, 144, 181, 0.5);
+    box-shadow: 0 0 0 0 rgba(12, 144, 181, 0.5);
+  }
+  70% {
+    -moz-box-shadow: 0 0 0 13px rgba(12, 144, 181, 0);
+    box-shadow: 0 0 0 13px rgba(12, 144, 181, 0);
+  }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(12, 144, 181, 0);
+    box-shadow: 0 0 0 0 rgba(12, 144, 181, 0);
+  }
+}
+@-webkit-keyframes pulse-btn {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(12, 144, 181, 0.6);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 14px rgba(12, 144, 181, 0.4);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(12, 144, 181, 0);
+  }
+}

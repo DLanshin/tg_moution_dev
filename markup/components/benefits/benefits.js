@@ -10,7 +10,6 @@ import Swiper, { Navigation, Pagination } from 'swiper';
 
     const breakpointChecker = function () {
         if (window.innerWidth > breakpoint ) {
-            console.log("destroy");
             if ( mySwiper !== undefined ) {
                 mySwiper.destroy(true, true);
                 document.querySelector(".benefits__slider .benefits__pagination").innerHTML = '';

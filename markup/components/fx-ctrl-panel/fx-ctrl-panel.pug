@@ -1,0 +1,8 @@
+mixin fx-ctrl-panel(data)
+    .fix-controls
+        .fix-controls__items
+            button#to-top.fix-controls__item.fix-controls__item--go-top
+                != pugHelpers.Icon.call(locals, {iconName: 'slider-arrow', className: 'fix-controls__icon--hidden'})
+                != pugHelpers.Icon.call(locals, {iconName: 'slider-arrow', className: 'fix-controls__icon'})
+            a.fix-controls__item.fix-controls__item--telegram
+                != pugHelpers.Icon.call(locals, {iconName: 'telegram-icon', className: 'fix-controls__icon'})

@@ -3,7 +3,7 @@ include ../video/video.pug
 include ../audience/audience.pug
 
 mixin service(data)
-    section.service.animate__animated
+    section.service
         .service__container.container
             h2.service__title.title.title_secondary <span>04</span> Сервис.
 
@@ -13,7 +13,7 @@ mixin service(data)
         +audience().service__audience
 
 mixin service-en(data)
-    section.service.animate__animated
+    section.service
         .service__container.container
             h2.service__title.title.title_secondary <span>04</span> Service.
 

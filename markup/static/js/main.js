@@ -8,12 +8,12 @@ import {includedSlider} from '../../components/included/included';
 import {benefitsSlider} from '../../components/benefits/benefits';
 // import tabs from '../../components/tabs/tabs';
 import {examplesGallery} from '../../components/examples/examples';
-import '../../components/go-to-top/go-to-top';
+import '../../components/fx-ctrl-panel/fx-ctrl-panel';
 import {reviewsSlider} from '../../components/reviews/reviews';
 // import { validateForms, validateFormsEn } from '../../components/form/form';
 // import {pageWidget} from '../../components/page-widget/page-widget';
 import {fixedHeader} from '../../components/header/header';
-import {goToTopInit} from "../../components/go-to-top/go-to-top";
+import {goToTopInit} from "../../components/fx-ctrl-panel/fx-ctrl-panel";
 import {scrollToBlock} from "../../components/nav/nav";
 
 document.addEventListener('DOMContentLoaded', function (event) {
