@@ -1,62 +1,78 @@
-
 .fix-controls{
+  z-index: 999;
   position: fixed;
   bottom: 20px;
-  right: 30px;
-  z-index: 99;
+  right: 15px;
   @include mq($medium){
     bottom: 50px;
-    right: 70px;
+    right: 30px;
   }
   &__items{
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
   }
   &__item{
+    z-index: 99;
     position: relative;
     margin-bottom: 10px;
     display: flex;
-    width: 60px;
-    height: 60px;
     border: none;
     outline: none;
-    background-color: $color-blue;
     color: white;
     cursor: pointer;
-    border-radius: 50%;
     font-size: 18px;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
     flex-wrap: wrap;
 
-    &:hover{
-      opacity: 0.8;
-      transform: scale(1.05);
-    }
+
+  }
+
+  &__item-text{
+    white-space: nowrap;
+    position: absolute;
+    right: 30px;
+    opacity: 0;
+    border-top-left-radius: 40px;
+    border-top: 2px solid $color-blue;
+    border-bottom: 2px solid $color-blue;
+    border-left: 2px solid $color-blue;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 30px 0 20px;
+    width: 0;
+    height: 60px;;
+    transition: all 0.8s ease;
+    z-index: -1;
   }
   &__item--go-top{
-    display: none;
-    z-index: 9999;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: $color-blue;
+    transition: all 0.5s ease;
+    &:hover{
+      opacity: 0.7;
+      transform: scale(1.1);
+
+    }
   }
   &__item--telegram{
+    overflow: initial;
+    height: 60px;
     z-index: 10;
     box-shadow: 0 0 0 0 rgba(12, 144, 181, 0.5);
-    //animation: linear 2s infinite pulse-btn;
+    &:hover .fix-controls__item-text{
+        opacity: 1;
+        width: 210px;
+    }
   }
-  &__item--go-top &__icon,
-  &__item--go-top &__icon--hidden{
+  &__item--go-top &__icon{
     fill:transparent;
     transform: rotate(-90deg);
-  }
-
-  &__item--go-top &__icon--hidden{
-    margin-top: -80px;
-    transition: margin-top 0.5s ease;
-  }
-
-  &__item--go-top:hover &__icon--hidden{
-    margin-top: 0;
   }
 }
 @-webkit-keyframes pulse-btn {
