@@ -17,7 +17,7 @@ html(class="no-js", lang="ru")
     include ../components/reviews/reviews.pug
     include ../components/contact-us/contact-us.pug
     include ../components/fx-ctrl-panel/fx-ctrl-panel.pug
-    include ../components/bg-animation/bg-animation
+    include ../components/bg-animation/bg-animation.pug
 
     include ../components/footer/footer.pug
 
@@ -25,7 +25,7 @@ html(class="no-js", lang="ru")
         +head(head.defaults)
     body.page
         |%=symbols=%
-        bg-animation
+        +bg-animation
         .page__wrapper
             +header-en()
             main.page__main

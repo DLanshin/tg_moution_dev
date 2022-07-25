@@ -9,6 +9,7 @@ import {benefitsSlider} from '../../components/benefits/benefits';
 // import tabs from '../../components/tabs/tabs';
 import {examplesGallery} from '../../components/examples/examples';
 import '../../components/fx-ctrl-panel/fx-ctrl-panel';
+import '../../components/bg-animation/bg-animation';
 import {reviewsSlider} from '../../components/reviews/reviews';
 // import { validateForms, validateFormsEn } from '../../components/form/form';
 // import {pageWidget} from '../../components/page-widget/page-widget';
