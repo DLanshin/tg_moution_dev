@@ -72,3 +72,38 @@ export function scrollToBlock(objId) {
         behavior: 'smooth'
     });
 }
+export function selectNav(obj) {
+    resetSelectNav();
+    obj.parentElement.classList.add("nav__item_active");
+}
+export function resetSelectNav() {
+    const nav = new Nav();
+    const itemActive = nav.$nav.querySelector(".nav__item_active");
+    if (itemActive) {
+        itemActive.classList.remove("nav__item_active");
+    }
+}
+export function selectPageOnScroll() {
+    const links = document.querySelector('.nav_primary').querySelectorAll(".nav__link");
+    links.forEach(function (link) {
+        const id = link.getAttribute("data-scrollTo");
+        const section = document.getElementById(id);
+        const sectionItemHeight = section.offsetHeight;
+        const sectionItemOffset = offset(section).top;
+        const sectionStart = 2;
+
+        let sectionItemPoint = window.innerHeight - sectionItemHeight / sectionStart;
+        if (sectionItemHeight > window.innerHeight) {
+            sectionItemPoint = window.innerHeight - window.innerHeight / sectionStart;
+        }
+        if ((pageYOffset > sectionItemOffset - sectionItemPoint) && pageYOffset < (sectionItemOffset + sectionItemHeight)) {
+            selectNav(link);
+        }
+    });
+}
+export function offset(el) {
+    const rect = el.getBoundingClientRect(),
+        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    return {top: rect.top + scrollTop, left: rect.left + scrollLeft};
+}

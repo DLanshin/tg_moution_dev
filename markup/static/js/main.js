@@ -2,7 +2,7 @@ import svg4everybody from 'svg4everybody';
 import LazyLoad from 'vanilla-lazyload';
 // import header from '../../components/header/header';
 // import { casesSlider, casesListToggle } from '../../components/cases/cases';
-import Nav from '../../components/nav/nav';
+import Nav, {offset, selectPageOnScroll} from '../../components/nav/nav';
 
 import {includedSlider} from '../../components/included/included';
 import {benefitsSlider} from '../../components/benefits/benefits';
@@ -15,12 +15,12 @@ import {reviewsSlider} from '../../components/reviews/reviews';
 // import {pageWidget} from '../../components/page-widget/page-widget';
 import {fixedHeader} from '../../components/header/header';
 import {goToTopInit} from "../../components/fx-ctrl-panel/fx-ctrl-panel";
-import {scrollToBlock} from "../../components/nav/nav";
+import {scrollToBlock, selectNav} from "../../components/nav/nav";
 
 document.addEventListener('DOMContentLoaded', function (event) {
 
     svg4everybody();
-
+    selectNavOnScroll();
     let styles = [
         'padding: 2px 9px',
         'background: #2948ff',
@@ -88,6 +88,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
     function handleButtonClick() {
         scrollToBlock(this.getAttribute("data-scrollTo"));
+        selectNav(this);
     }
 
     links.forEach(function (link) {
@@ -96,6 +97,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
     window.onscroll = function () {
         fixedHeader();
         goToTopInit();
+        selectPageOnScroll();
         const Items = document.querySelectorAll('.animate__animated');
         if (Items.length > 0) {
             animationOnScroll(Items);
@@ -113,7 +115,6 @@ document.addEventListener('DOMContentLoaded', function (event) {
                 animItemPoint = window.innerHeight - window.innerHeight / animStart;
             }
             // console.log(animItemPoint);
-            console.log(pageYOffset > animItemOffset - animItemPoint);
             if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
                 console.log("addClass");
                 animItem.classList.add("animate__zoomIn");
@@ -121,12 +122,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
         });
     }
-    function offset(el) {
-        const rect = el.getBoundingClientRect(),
-            scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-            scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        return {top: rect.top + scrollTop, left: rect.left + scrollLeft};
-    }
+
 });
 
 
