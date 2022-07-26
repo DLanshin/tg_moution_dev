@@ -20,7 +20,7 @@ import {scrollToBlock, selectNav} from "../../components/nav/nav";
 document.addEventListener('DOMContentLoaded', function (event) {
 
     svg4everybody();
-    selectNavOnScroll();
+    selectPageOnScroll();
     let styles = [
         'padding: 2px 9px',
         'background: #2948ff',
