@@ -1,6 +1,6 @@
 head: {
     defaults: {
-        title: 'default title',
+        title: 'TG Motion - Сервис продвижения и рассылки рекламы',
         useSocialMetaTags: true
     }
 }

@@ -26,9 +26,9 @@ mixin footer-en(data)
             +nav(nav.primaryListEn).footer__nav.nav_secondary
 
             .footer__langs.langs.langs_secondary
-                a.langs__lang(href="/index-en.html")
+                a.langs__lang.langs__lang_active(href="/index-en.html")
                     != pugHelpers.Icon.call(locals, {iconName: 'lang-en', className: 'langs__icon'})
                     | Eng
-                a.langs__lang.langs__lang_active(href="/index.html")
+                a.langs__lang(href="/index.html")
                     != pugHelpers.Icon.call(locals, {iconName: 'lang-ru', className: 'langs__icon'})
                     | Rus
