@@ -5,18 +5,9 @@ html(class="no-js", lang="ru")
 
     include ../components/header/header.pug
     include ../components/nav/nav.pug
-    include ../components/hero/hero.pug
     include ../components/included/included.pug
-    include ../components/pricing/pricing.pug
-    include ../components/benefits/benefits.pug
-    include ../components/service/service.pug
-    include ../components/write/write.pug
-    include ../components/video/video.pug
-    include ../components/audience/audience.pug
-    include ../components/examples/examples.pug
-    include ../components/reviews/reviews.pug
+    include ../components/blog_item/blog_item.pug
     include ../components/blog/blog.pug
-    include ../components/contact-us/contact-us.pug
     include ../components/fx-ctrl-panel/fx-ctrl-panel.pug
     include ../components/bg-animation/bg-animation.pug
 
@@ -30,17 +21,8 @@ html(class="no-js", lang="ru")
         .page__wrapper
             +header()
             main.page__main
-                +hero()
-                +included()
-                +pricing()
-                +benefits()
-                +service()
-                +examples()
-                +blog()
-                +reviews()
-                +contact-us()
-
-
+                +blog_item()
+                +blog-read-more()
             +footer().page__footer
         +fx-ctrl-panel()
 

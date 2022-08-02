@@ -1,21 +1,16 @@
 import svg4everybody from 'svg4everybody';
 import LazyLoad from 'vanilla-lazyload';
-// import header from '../../components/header/header';
-// import { casesSlider, casesListToggle } from '../../components/cases/cases';
 import Nav, {offset, selectPageOnScroll} from '../../components/nav/nav';
 
 import {includedSlider} from '../../components/included/included';
-import {benefitsSlider} from '../../components/benefits/benefits';
-// import tabs from '../../components/tabs/tabs';
 import {examplesGallery} from '../../components/examples/examples';
 import '../../components/fx-ctrl-panel/fx-ctrl-panel';
 import '../../components/bg-animation/bg-animation';
-import {reviewsSlider} from '../../components/reviews/reviews';
-// import { validateForms, validateFormsEn } from '../../components/form/form';
-// import {pageWidget} from '../../components/page-widget/page-widget';
+import "../../components/blog/blog";
 import {fixedHeader} from '../../components/header/header';
 import {goToTopInit} from "../../components/fx-ctrl-panel/fx-ctrl-panel";
 import {scrollToBlock, selectNav} from "../../components/nav/nav";
+
 
 document.addEventListener('DOMContentLoaded', function (event) {
 

@@ -1,0 +1,183 @@
+mixin blog(data)
+    section#blogs.blogs.animate__animated
+        .blogs__container.container
+
+            .blogs__circle.circle
+
+            != pugHelpers.Icon.call(locals, {iconName: 'reviews-path', className: 'reviews__path'})
+
+
+            h2.blogs__title.title.title_secondary  <span>06</span> Блог.
+
+            .blogs__slider
+                .swiper
+                    .swiper-wrapper
+                        .blogs__review.swiper-slide
+                            picture.blogs__image
+                                source(type="image/webp", srcset="static/img/content/sc-2.png", data-srcset="static/img/content/sc-2.png" media="(min-width: 960px)")
+                                source(type="image/png", srcset="static/img/content/sc-2.png", data-srcset="static/img/content/sc-2.png" media="(min-width: 960px)")
+
+                                source(type="image/webp", media="(min-width: 240px)" srcset="static/img/content/sc-2.png", data-srcset="static/img/content/sc-2.png" )
+                                source(type="image/png", media="(min-width: 240px)" srcset="static/img/content/sc-2.png", data-srcset="static/img/content/sc-2.png" )
+
+                                img.lazy(src="static/img/content/sc-2.png" alt="Изображение", data-src="static/img/content/sc-2.png" )
+
+
+                            .blogs__review-entry
+                                .blogs__review-categorys
+                                    .blogs__review-category Советы | Разбор
+                                a.blogs__review-title(href="#") SEO для чайников: как продвигать бизнес через поисковики
+                                .blogs__review-text В последние месяцы развитие бизнеса в соцсетях похоже на гадание: что зайдёт, что не зайдёт, на какие площадки идти, а куда не надо. Неудивительно, что многие предприниматели в связи с этим задумались над созданием сайта и его развитием через поисковики. Но есть одна проблема — это куда сложнее, чем привычный SMM.
+                                a.blogs__review-link(href="https://t.me/TGMotion_bot") Узнать больше
+                            .blogs__review-meta
+                                date.blogs__review-date(datetime='13.07.2022') 13.07.2022
+                                .blogs__review-views
+                                    != pugHelpers.Icon.call(locals, {iconName: 'views-icon',className: 'blogs__review-icon '})
+                                    | 113
+                        .blogs__review.swiper-slide
+                            picture.blogs__image
+                                source(type="image/webp", srcset="static/img/content/sc-2.png", data-srcset="static/img/content/sc-2.png" media="(min-width: 960px)")
+                                source(type="image/png", srcset="static/img/content/sc-2.png", data-srcset="static/img/content/sc-2.png" media="(min-width: 960px)")
+
+                                source(type="image/webp", media="(min-width: 240px)" srcset="static/img/content/sc-2.png", data-srcset="static/img/content/sc-2.png" )
+                                source(type="image/png", media="(min-width: 240px)" srcset="static/img/content/sc-2.png", data-srcset="static/img/content/sc-2.png" )
+
+                                img.lazy(src="static/img/content/sc-2.png" alt="Изображение", data-src="static/img/content/sc-2.png" )
+
+                            .blogs__review-entry
+                                .blogs__review-categorys
+                                    .blogs__review-category Советы | Разбор
+                                a.blogs__review-title(href="#") SEO для чайников: как продвигать бизнес через поисковики
+                                .blogs__review-text В последние месяцы развитие бизнеса в соцсетях похоже на гадание: что зайдёт, что не зайдёт, на какие площадки идти, а куда не надо. Неудивительно, что многие предприниматели в связи с этим задумались над созданием сайта и его развитием через поисковики. Но есть одна проблема — это куда сложнее, чем привычный SMM.
+                                a.blogs__review-link(href="https://t.me/TGMotion_bot") Узнать больше
+                            .blogs__review-meta
+                                date.blogs__review-date(datetime='13.07.2022') 13.07.2022
+                                .blogs__review-views
+                                    != pugHelpers.Icon.call(locals, {iconName: 'views-icon',className: 'blogs__review-icon '})
+                                    | 113
+                        .blogs__review.swiper-slide
+                            picture.blogs__image
+                                source(type="image/webp", srcset="static/img/content/sc-2.png", data-srcset="static/img/content/sc-2.png" media="(min-width: 960px)")
+                                source(type="image/png", srcset="static/img/content/sc-2.png", data-srcset="static/img/content/sc-2.png" media="(min-width: 960px)")
+
+                                source(type="image/webp", media="(min-width: 240px)" srcset="static/img/content/sc-2.png", data-srcset="static/img/content/sc-2.png" )
+                                source(type="image/png", media="(min-width: 240px)" srcset="static/img/content/sc-2.png", data-srcset="static/img/content/sc-2.png" )
+
+                                img.lazy(src="static/img/content/sc-2.png" alt="Изображение", data-src="static/img/content/sc-2.png" )
+
+                            .blogs__review-entry
+                                .blogs__review-categorys
+                                    .blogs__review-category Советы | Разбор
+                                a.blogs__review-title(href="#") SEO для чайников: как продвигать бизнес через поисковики
+                                .blogs__review-text В последние месяцы развитие бизнеса в соцсетях похоже на гадание: что зайдёт, что не зайдёт, на какие площадки идти, а куда не надо. Неудивительно, что многие предприниматели в связи с этим задумались над созданием сайта и его развитием через поисковики. Но есть одна проблема — это куда сложнее, чем привычный SMM.
+                                a.blogs__review-link(href="https://t.me/TGMotion_bot") Узнать больше
+                            .blogs__review-meta
+                                date.blogs__review-date(datetime='13.07.2022') 13.07.2022
+                                .blogs__review-views
+                                    != pugHelpers.Icon.call(locals, {iconName: 'views-icon', className: 'blogs__review-icon '})
+                                    | 113
+                        .blogs__review.swiper-slide
+                            picture.blogs__image
+                                source(type="image/webp", srcset="static/img/content/sc-2.png", data-srcset="static/img/content/sc-2.png" media="(min-width: 960px)")
+                                source(type="image/png", srcset="static/img/content/sc-2.png", data-srcset="static/img/content/sc-2.png" media="(min-width: 960px)")
+
+                                source(type="image/webp", media="(min-width: 240px)" srcset="static/img/content/sc-2.png", data-srcset="static/img/content/sc-2.png" )
+                                source(type="image/png", media="(min-width: 240px)" srcset="static/img/content/sc-2.png", data-srcset="static/img/content/sc-2.png" )
+
+                                img.lazy(src="static/img/content/sc-2.png" alt="Изображение", data-src="static/img/content/sc-2.png" )
+
+                            .blogs__review-entry
+                                .blogs__review-categorys
+                                    .blogs__review-category Советы | Разбор
+                                a.blogs__review-title(href="#") SEO для чайников: как продвигать бизнес через поисковики
+                                .blogs__review-text В последние месяцы развитие бизнеса в соцсетях похоже на гадание: что зайдёт, что не зайдёт, на какие площадки идти, а куда не надо. Неудивительно, что многие предприниматели в связи с этим задумались над созданием сайта и его развитием через поисковики. Но есть одна проблема — это куда сложнее, чем привычный SMM.
+                                a.blogs__review-link(href="https://t.me/TGMotion_bot") Узнать больше
+                            .blogs__review-meta
+                                date.blogs__review-date(datetime='13.07.2022') 13.07.2022
+                                .blogs__review-views
+                                    != pugHelpers.Icon.call(locals, {iconName: 'views-icon',className: 'blogs__review-icon '})
+                                    | 113
+                    .blogs__pagination.swiper-pagination.slider__pagination
+
+            .blogs__buttons.buttons
+                a.blogs__button.button.button_stroke(href="https://t.me/TGMotion_bot") Больше статей
+
+mixin blog-read-more(data)
+    section#blogs.blogs.animate__animated
+        .blogs__container.container
+            h3.blogs__title.blogs__center.title.title_secondary  Читайте также
+
+            .blogs__slider
+                .swiper
+                    .swiper-wrapper
+                        .blogs__review.swiper-slide
+                            picture.blogs__image
+                                source(type="image/webp", srcset="static/img/content/sc-2.png", data-srcset="static/img/content/sc-2.png" media="(min-width: 960px)")
+                                source(type="image/png", srcset="static/img/content/sc-2.png", data-srcset="static/img/content/sc-2.png" media="(min-width: 960px)")
+
+                                source(type="image/webp", media="(min-width: 240px)" srcset="static/img/content/sc-2.png", data-srcset="static/img/content/sc-2.png" )
+                                source(type="image/png", media="(min-width: 240px)" srcset="static/img/content/sc-2.png", data-srcset="static/img/content/sc-2.png" )
+
+                                img.lazy(src="static/img/content/sc-2.png" alt="Изображение", data-src="static/img/content/sc-2.png" )
+
+
+                            .blogs__review-entry
+                                .blogs__review-categorys
+                                    .blogs__review-category Советы | Разбор
+                                a.blogs__review-title(href="#") SEO для чайников: как продвигать бизнес через поисковики
+                                .blogs__review-text В последние месяцы развитие бизнеса в соцсетях похоже на гадание: что зайдёт, что не зайдёт, на какие площадки идти, а куда не надо. Неудивительно, что многие предприниматели в связи с этим задумались над созданием сайта и его развитием через поисковики. Но есть одна проблема — это куда сложнее, чем привычный SMM.
+                                a.blogs__review-link(href="https://t.me/TGMotion_bot") Узнать больше
+                            .blogs__review-meta
+                                date.blogs__review-date(datetime='13.07.2022') 13.07.2022
+                                .blogs__review-views
+                                    != pugHelpers.Icon.call(locals, {iconName: 'views-icon',className: 'blogs__review-icon '})
+                                    | 113
+                        .blogs__review.swiper-slide
+                            picture.blogs__image
+                                source(type="image/webp", srcset="static/img/content/sc-2.png", data-srcset="static/img/content/sc-2.png" media="(min-width: 960px)")
+                                source(type="image/png", srcset="static/img/content/sc-2.png", data-srcset="static/img/content/sc-2.png" media="(min-width: 960px)")
+
+                                source(type="image/webp", media="(min-width: 240px)" srcset="static/img/content/sc-2.png", data-srcset="static/img/content/sc-2.png" )
+                                source(type="image/png", media="(min-width: 240px)" srcset="static/img/content/sc-2.png", data-srcset="static/img/content/sc-2.png" )
+
+                                img.lazy(src="static/img/content/sc-2.png" alt="Изображение", data-src="static/img/content/sc-2.png" )
+
+                            .blogs__review-entry
+                                .blogs__review-categorys
+                                    .blogs__review-category Советы | Разбор
+                                a.blogs__review-title(href="#") SEO для чайников: как продвигать бизнес через поисковики
+                                .blogs__review-text В последние месяцы развитие бизнеса в соцсетях похоже на гадание: что зайдёт, что не зайдёт, на какие площадки идти, а куда не надо. Неудивительно, что многие предприниматели в связи с этим задумались над созданием сайта и его развитием через поисковики. Но есть одна проблема — это куда сложнее, чем привычный SMM.
+                                a.blogs__review-link(href="https://t.me/TGMotion_bot") Узнать больше
+                            .blogs__review-meta
+                                date.blogs__review-date(datetime='13.07.2022') 13.07.2022
+                                .blogs__review-views
+                                    != pugHelpers.Icon.call(locals, {iconName: 'views-icon',className: 'blogs__review-icon '})
+                                    | 113
+                        .blogs__review.swiper-slide
+                            picture.blogs__image
+                                source(type="image/webp", srcset="static/img/content/sc-2.png", data-srcset="static/img/content/sc-2.png" media="(min-width: 960px)")
+                                source(type="image/png", srcset="static/img/content/sc-2.png", data-srcset="static/img/content/sc-2.png" media="(min-width: 960px)")
+
+                                source(type="image/webp", media="(min-width: 240px)" srcset="static/img/content/sc-2.png", data-srcset="static/img/content/sc-2.png" )
+                                source(type="image/png", media="(min-width: 240px)" srcset="static/img/content/sc-2.png", data-srcset="static/img/content/sc-2.png" )
+
+                                img.lazy(src="static/img/content/sc-2.png" alt="Изображение", data-src="static/img/content/sc-2.png" )
+
+                            .blogs__review-entry
+                                .blogs__review-categorys
+                                    .blogs__review-category Советы | Разбор
+                                a.blogs__review-title(href="#") SEO для чайников: как продвигать бизнес через поисковики
+                                .blogs__review-text В последние месяцы развитие бизнеса в соцсетях похоже на гадание: что зайдёт, что не зайдёт, на какие площадки идти, а куда не надо. Неудивительно, что многие предприниматели в связи с этим задумались над созданием сайта и его развитием через поисковики. Но есть одна проблема — это куда сложнее, чем привычный SMM.
+                                a.blogs__review-link(href="https://t.me/TGMotion_bot") Узнать больше
+                            .blogs__review-meta
+                                date.blogs__review-date(datetime='13.07.2022') 13.07.2022
+                                .blogs__review-views
+                                    != pugHelpers.Icon.call(locals, {iconName: 'views-icon', className: 'blogs__review-icon '})
+                                    | 113
+                    .blogs__pagination.swiper-pagination.slider__pagination
+
+            .blogs__buttons.buttons
+                a.blogs__button.button.button_stroke(href="https://t.me/TGMotion_bot") Больше статей
+
+
+

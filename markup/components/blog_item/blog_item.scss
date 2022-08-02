@@ -1,0 +1,32 @@
+.blog-item {
+
+  &__container {
+
+  }
+
+  &__wrapper {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    margin: 0 auto;
+  }
+
+  &__title {
+    text-align: center;
+    @include font-size(36px);
+    margin-bottom: 20px;
+  }
+
+  &__date {
+    color: grey;
+    text-align: center;
+    @include font-size(16px);
+    margin-bottom: 20px;
+  }
+
+  &__content {
+    @include font-size(16px);
+  }
+}
